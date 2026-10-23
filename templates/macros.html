@@ -24,7 +24,7 @@
         <p class="sched-h">{{ t.live_next }}</p>
         <ul class="sched"></ul>
       </div>
-      <a class="yt" data-yt href="https://www.youtube.com/channel/{{ site.youtube_channel_id }}" target="_blank" rel="noopener" {% if not site.youtube_channel_id %}hidden{% endif %}>{{ t.live_watch }}</a>
+      <a class="yt" data-yt href="{{ site.youtube_url or ('https://www.youtube.com/channel/' ~ site.youtube_channel_id) }}" target="_blank" rel="noopener" {% if not site.youtube_channel_id %}hidden{% endif %}>{{ t.live_watch }}</a>
     </div>
   </div>
 </section>

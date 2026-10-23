@@ -64,6 +64,7 @@
     <div>
       <p class="foot-h">{{ t.footer_contact }}</p>
       <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      {% if site.youtube_url %}<a href="{{ site.youtube_url }}" target="_blank" rel="noopener">YouTube</a>{% endif %}
       <a href="{{ url('quienes-somos') }}">{{ t.nav['quienes-somos'] }}</a>
       <a href="{{ url('privacidad') }}">{{ t.nav['privacidad'] }}</a>
     </div>
