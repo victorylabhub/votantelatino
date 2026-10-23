@@ -4,6 +4,9 @@ title: 'Nubi, el asistente de IA para votantes latinos: qué es, quién lo hizo 
 lang: es
 ref: nubi
 category: elecciones-2026
+image: /static/img/noticias/nubi-prueba-votante-latino.webp
+image_alt: Respuesta de Nubi sobre la identificación para votar en Pensilvania
+image_credit: Captura de pantalla de Nubi tomada por Votante Latino el 23 de octubre de 2026.
 dek: Mi Familia en Acción lanzó una herramienta bilingüe que responde dudas sobre
   cómo votar. Revisamos cómo funciona, quién está detrás y lo que todavía no se sabe.
 author: Redacción Votante Latino
@@ -87,14 +90,28 @@ Un estudio del **Institute for Strategic Dialogue (ISD)**, realizado en junio de
 - Uno de los modelos dio una fecha equivocada para la elección: 4 de noviembre en lugar del 3.
 - Las empresas cuestionaron la metodología, porque la mayoría de los modelos se probó por una interfaz técnica y no por sus aplicaciones, y varios se han actualizado desde entonces.
 
-El enfoque de Nubi, con fuentes seleccionadas y revisión humana, busca precisamente evitar esos errores. **Hasta ahora, sin embargo, no hay una evaluación independiente de su precisión.** Telemundo hizo dos pruebas, sobre voto por correo en Arizona y registro en Míchigan, y obtuvo respuestas correctas, pero no la evaluó a fondo.
+El enfoque de Nubi, con fuentes seleccionadas y revisión humana, busca precisamente evitar esos errores. **Hasta ahora, sin embargo, nadie ha publicado una evaluación independiente a fondo de su precisión.** Telemundo hizo dos pruebas, sobre voto por correo en Arizona y registro en Míchigan, y obtuvo respuestas correctas.
+
+## Lo pusimos a prueba
+
+El 23 de octubre, Votante Latino le hizo a Nubi cinco preguntas en español y comparó sus respuestas con la información oficial.
+
+| Pregunta | Respuesta de Nubi | Resultado |
+|---|---|---|
+| ¿Cuándo es la elección general de 2026? | No dio la fecha. Pidió repetir la pregunta indicando el estado. | **No respondió.** La fecha es la misma en todo el país: martes 3 de noviembre. |
+| Vivo en Texas y no estoy registrado. ¿Todavía puedo registrarme? | El plazo venció el 5 de octubre y Texas no permite registrarse el día de la elección. | **Correcta.** |
+| Vivo en Míchigan. ¿Puedo registrarme el mismo día de la elección? | Sí, en persona hasta el 3 de noviembre; el registro en línea o por correo cerró el 19 de octubre. Enumeró documentos aceptados. | **Correcta.** |
+| Vivo en Arizona, ¿hasta cuándo puedo enviar mi boleta por correo? | Debe ser recibida antes de las 7:00 p.m. del 3 de noviembre. Incluyó enlaces oficiales. | **Correcta, pero incompleta:** no advirtió que conviene enviarla con días de anticipación ni mencionó la opción de entregarla en persona. |
+| Estoy registrado en Pensilvania y ya he votado. ¿Qué identificación necesito? | "Es posible" que no te la pidan; se exige a quien vota por primera vez en su distrito. | **Correcta en lo esencial**, aunque con lenguaje poco tajante y con la lista de documentos en inglés. |
+
+En las respuestas por estado, Nubi acertó en los datos clave y remitió a fuentes oficiales. Sus puntos débiles fueron una pregunta general que no supo contestar, la falta de recomendaciones prácticas en el voto por correo y fragmentos sin traducir en una herramienta que se presenta como bilingüe. Se trata de una prueba limitada, de cinco preguntas en una sola sesión, que no sustituye una evaluación sistemática.
 
 ## Lo que todavía no se sabe
 
 - Cuánto costó y qué tecnología usa.
 - En cuántos estados funciona realmente.
 - Qué datos guarda de quienes la usan.
-- Si un tercero independiente ha medido su precisión.
+- Si un tercero independiente ha medido su precisión de forma sistemática.
 
 Si Mi Familia en Acción aclara estos puntos, actualizaremos esta nota.
 

@@ -4,6 +4,9 @@ title: 'Nubi, the AI assistant for Latino voters: what it is, who built it and h
 lang: en
 ref: nubi
 category: elecciones-2026
+image: /static/img/noticias/nubi-prueba-votante-latino.webp
+image_alt: Nubi's answer about voter ID in Pennsylvania
+image_credit: Screenshot of Nubi taken by Votante Latino on October 23, 2026.
 dek: Mi Familia en Acción launched a bilingual tool that answers questions about how
   to vote. We looked at how it works, who's behind it and what remains unknown.
 author: Votante Latino Newsroom
@@ -86,14 +89,28 @@ A study by the **Institute for Strategic Dialogue (ISD)**, run in June 2026 with
 - One model gave the wrong Election Day: November 4 instead of November 3.
 - The companies disputed the methodology, since most models were tested through a technical interface rather than their consumer apps, and several have been updated since.
 
-Nubi's approach, with curated sources and human review, is meant to avoid exactly those errors. **So far, however, there is no independent evaluation of its accuracy.** Telemundo ran two tests, on mail voting in Arizona and registration in Michigan, and got correct answers, but didn't evaluate it in depth.
+Nubi's approach, with curated sources and human review, is meant to avoid exactly those errors. **So far, however, no one has published an in-depth independent evaluation of its accuracy.** Telemundo ran two tests, on mail voting in Arizona and registration in Michigan, and got correct answers.
+
+## We put it to the test
+
+On October 23, Votante Latino asked Nubi five questions in Spanish and compared its answers with official information.
+
+| Question | Nubi's answer | Result |
+|---|---|---|
+| When is the 2026 general election? | It didn't give the date. It asked us to repeat the question and name a state. | **No answer.** The date is the same nationwide: Tuesday, November 3. |
+| I live in Texas and I'm not registered. Can I still register? | The deadline was October 5, and Texas doesn't allow Election Day registration. | **Correct.** |
+| I live in Michigan. Can I register on Election Day? | Yes, in person through November 3; online and mail registration closed October 19. It listed accepted documents. | **Correct.** |
+| I live in Arizona. When is the deadline to mail my ballot? | It must be received by 7:00 p.m. on November 3. It included official links. | **Correct but incomplete:** it didn't warn voters to mail it several days early or mention returning it in person. |
+| I'm registered in Pennsylvania and have voted before. What ID do I need? | You "may not" be asked; ID is required for first-time voters in their district. | **Essentially correct**, though hedged, and the list of documents was in English. |
+
+On state-specific questions, Nubi got the key facts right and pointed to official sources. Its weak spots were a general question it couldn't answer, missing practical advice on mail voting, and untranslated passages in a tool billed as bilingual. This was a limited test, five questions in a single session, and is no substitute for a systematic evaluation.
 
 ## What we still don't know
 
 - What it cost and what technology it uses.
 - How many states it actually covers.
 - What data it keeps about its users.
-- Whether an independent third party has measured its accuracy.
+- Whether an independent third party has systematically measured its accuracy.
 
 If Mi Familia en Acción clarifies these points, we will update this story.
 
