@@ -1,6 +1,6 @@
-# El sitio se construye localmente (python3 build.py) y se publica la carpeta dist/.
-# Publicar:  npx netlify-cli deploy --prod
-# (Arrastrar la carpeta a Netlify NO publica la función de la señal en vivo.)
+# Netlify construye el sitio a partir del repositorio.
+# Cada nota publicada desde el panel (/admin/) genera un nuevo despliegue.
 [build]
+  command = "pip install -r requirements.txt && python3 build.py"
   publish = "dist"
   functions = "netlify/functions"
