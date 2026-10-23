@@ -1,0 +1,31 @@
+{% macro share(t) %}
+<div class="share" data-share>
+  <span>{{ t.share }}</span>
+  <a class="wa" data-net="wa" href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a>
+  <a data-net="fb" href="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="noopener">Facebook</a>
+  <a data-net="x" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener">X</a>
+  <button type="button" data-net="copy">{{ t.share_copy }}</button>
+</div>
+{% endmacro %}
+
+{% macro live(t, site, url, where) %}
+{# Bloque en vivo: oculto por defecto; site.js lo muestra si /api/live reporta transmisión. #}
+<section class="live" data-live="{{ where }}" {% if where == 'home' %}hidden{% endif %} aria-label="{{ t.live_now }}">
+  <div class="wrap live-grid">
+    <div class="player" data-player>
+      {% if where != 'home' %}<p class="player-off">{{ t.pages['noche-electoral'].player_off }}</p>{% endif %}
+    </div>
+    <div class="live-side">
+      <span class="live-badge" data-badge hidden>{{ t.live_now }}</span>
+      <h2 data-live-title>{% if where == 'home' %}{{ t.live_title_fallback }}{% else %}{{ t.pages['noche-electoral'].what_title }}{% endif %}</h2>
+      {% if where != 'home' %}<p>{{ t.pages['noche-electoral'].what_body }}</p>{% endif %}
+      {{ share(t) }}
+      <div data-upcoming hidden>
+        <p class="sched-h">{{ t.live_next }}</p>
+        <ul class="sched"></ul>
+      </div>
+      <a class="yt" data-yt href="https://www.youtube.com/channel/{{ site.youtube_channel_id }}" target="_blank" rel="noopener" {% if not site.youtube_channel_id %}hidden{% endif %}>{{ t.live_watch }}</a>
+    </div>
+  </div>
+</section>
+{% endmacro %}

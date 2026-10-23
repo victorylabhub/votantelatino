@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% set pg = None %}
+{% block main %}
+{% from "macros.html" import share, live %}
+{{ live(t, site, url, "home") }}
+<section class="car" data-car aria-roledescription="carousel" aria-label="{{ t.car_label }}">
+  <div class="car-stage">
+    <div class="car-grain" aria-hidden="true"></div>
+    <p class="car-ghost" aria-hidden="true">{{ t.car_ghost }}</p>
+    <div class="car-figs">
+      {% for i in range(1,5) %}<img class="fig" src="/static/img/hero/fig{{ i }}.webp" alt="" draggable="false" {% if i > 1 %}loading="eager"{% endif %}>{% endfor %}
+    </div>
+    <div class="car-copy">
+      <p class="car-title">{{ t.car_title }}</p>
+      <p class="car-line">{{ t.car_line }}</p>
+      <div class="car-nav">
+        <button type="button" data-dir="prev" aria-label="{{ t.car_prev }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+        <button type="button" data-dir="next" aria-label="{{ t.car_next }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+        <button type="button" class="car-pause" data-pause aria-pressed="false" aria-label="{{ t.car_pause }}" data-pause-label="{{ t.car_pause }}" data-play="{{ t.car_play }}"><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12M15 6v12"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z"/></svg></button>
+      </div>
+    </div>
+    <a class="car-cta" href="{{ url('tienda') }}">{{ t.car_cta }}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+  </div>
+</section>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="countdown" id="countdown" data-date="{{ site.election_date }}"
+         data-future="{{ t.countdown_future }}" data-one="{{ t.countdown_one }}"
+         data-today="{{ t.countdown_today }}" data-past="{{ t.countdown_past }}"></p>
+      <h1>{{ t.hero_title }}</h1>
+      <p class="lede">{{ t.hero_lede }}</p>
+      
+    </div>
+    <form class="picker" action="https://vote.gov/register/" method="get" id="picker">
+        <label for="state">{{ t.state_label }}</label>
+        <div class="picker-row">
+          <select id="state" name="s" required>
+            <option value="" disabled selected>{{ t.state_placeholder }}</option>
+            {% for code, name in states %}<option value="{{ code }}">{{ name }}</option>{% endfor %}
+          </select>
+          <button type="submit">{{ t.state_go }}</button>
+        </div>
+        <p class="picker-note">{{ t.state_note }}</p>
+      </form>
+  </div>
+</section>
+
+<section class="help" aria-labelledby="help-h">
+  <div class="wrap help-grid help-grid-img">
+    <img class="sec-img" src="/static/img/comunidad/c1.webp" alt="{{ t.com_alts[0] }}" width="900" height="900" loading="lazy">
+    <div>
+      <h2 id="help-h">{{ t.help_title }}</h2>
+      <p>{{ t.help_body }}</p>
+    </div>
+    <div class="lines">
+      {% for l in t.help_lines %}
+      <a class="line" href="tel:+1{{ l.tel }}">
+        <span class="line-label">{{ l.label }}</span>
+        <span class="line-show">{{ l.show }}</span>
+        <span class="line-num">{{ l.num }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="steps wrap" aria-labelledby="steps-h">
+  <h2 id="steps-h">{{ t.steps_title }}</h2>
+  <div class="steps-body">
+  <img class="sec-img" src="/static/img/comunidad/c2.webp" alt="{{ t.com_alts[1] }}" width="900" height="900" loading="lazy">
+  <ol class="step-list">
+    {% for s in t.steps %}
+    <li><h3>{{ s.h }}</h3><p>{{ s.p }}</p></li>
+    {% endfor %}
+  </ol>
+  </div>
+  <a class="more" href="{{ url('como-votar') }}">{{ t.steps_more }}</a>
+</section>
+
+<section class="pair wrap">
+  <div class="rights">
+    <h2>{{ t.rights_title }}</h2>
+    <ul>{% for r in t.rights_short %}<li>{{ r }}</li>{% endfor %}</ul>
+    <a class="more" href="{{ url('tus-derechos') }}">{{ t.rights_more }}</a>
+  </div>
+  <div class="verify">
+    <img class="sec-img verify-img" src="/static/img/comunidad/c3.webp" alt="{{ t.com_alts[2] }}" width="900" height="900" loading="lazy">
+    <h2>{{ t.verify_title }}</h2>
+    <p>{{ t.verify_short }}</p>
+    <a class="more" href="{{ url('verifica') }}">{{ t.verify_more }}</a>
+  </div>
+</section>
+
+<section class="news wrap" aria-labelledby="news-h">
+  <div class="news-top">
+    <h2 id="news-h">{{ t.news.latest }}</h2>
+    <a class="more" href="{{ url('noticias') }}">{{ t.news.more }}</a>
+  </div>
+  <div class="news-grid">
+    <div class="news-cards">
+      {% from "news_card.html" import card %}
+      {% for a in news[:3] %}{{ card(a, t, lang, "m" if loop.first else "s") }}{% else %}<p class="news-empty">{{ t.news_empty }}</p>{% endfor %}
+    </div>
+    <div class="news-side">
+      <img class="sec-img" src="/static/img/comunidad/c4.webp" alt="{{ t.com_alts[3] }}" width="900" height="900" loading="lazy">
+      <a class="com-cta" href="{{ url('tienda') }}">{{ t.com_cta }}</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% macro card(a, t, lang, size="m") %}
+<article class="nc nc-{{ size }} nc-{{ a.category }}">
+  {% if a.image and size != 's' %}<a class="nc-img" href="{{ a.url }}" tabindex="-1" aria-hidden="true"><img src="{{ a.image }}" alt="" loading="lazy"></a>{% endif %}
+  <p class="nc-cat">{{ t.news.cats[a.category] }}</p>
+  <h3 class="nc-h"><a href="{{ a.url }}">{{ a.title }}</a></h3>
+  {% if size != 's' %}<p class="nc-dek">{{ a.dek }}</p>{% endif %}
+  <p class="nc-meta"><time datetime="{{ a.date.isoformat() }}">{{ a.date|fecha(lang) }}</time> · {{ ((a.words / 200)|round(0, 'ceil'))|int }} {{ t.news.min }}</p>
+</article>
+{% endmacro %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% from "macros.html" import share %}
+{% block main %}
+<article class="doc wrap">
+  <header class="doc-h">
+    <h1>{{ pg.title }}</h1>
+    <p class="lede">{{ pg.lede }}</p>
+  </header>
+  {% if page == "quienes-somos" %}<img class="doc-img" src="/static/img/comunidad/c1.webp" alt="{{ t.com_alts[0] }}" width="900" height="900">{% endif %}
+  <div class="prose">
+    {{ pg.body|safe }}
+    {% if page == "noticias" %}
+      <p class="news-empty">{{ t.news_empty }} <a href="mailto:{{ site.email }}">{{ t.news_contact }}</a>.</p>
+    {% endif %}
+  </div>
+  {% if page != "404" and page != "privacidad" %}<div class="doc-share">{{ share(t) }}</div>{% endif %}
+  {% if page == "como-votar" %}
+  <section class="states" aria-labelledby="st-h">
+    <h2 id="st-h">{{ pg.states_title }}</h2>
+    <ul class="state-grid">
+      {% for code, name in states %}<li><a href="https://vote.gov/register/{{ code }}">{{ name }}</a></li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</article>
+{% endblock %}

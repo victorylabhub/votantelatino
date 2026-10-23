@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% from "macros.html" import share, live %}
+{% block main %}
+<section class="en-hero">
+  <div class="wrap">
+    <p class="countdown" id="countdown" data-date="{{ site.election_date }}" data-future="{{ t.countdown_future }}" data-one="{{ t.countdown_one }}" data-today="{{ t.countdown_today }}" data-past="{{ t.countdown_past }}"></p>
+    <h1>{{ pg.title }}</h1>
+    <p>{{ pg.lede }}</p>
+  </div>
+</section>
+{{ live(t, site, url, "noche") }}
+{% if closing %}
+<section class="close wrap" aria-labelledby="cl-h">
+  <h2 id="cl-h">{{ pg.close_title }}</h2>
+  <ol class="close-list">
+    {% for g in closing %}
+    <li><b>{{ g.et }}</b><span>{{ g.names|join(', ') }}</span></li>
+    {% endfor %}
+  </ol>
+  <p class="close-note">{{ pg.close_note }}</p>
+</section>
+{% endif %}
+<section class="res wrap" aria-labelledby="res-h">
+  <h2 id="res-h">{{ pg.results_title }}</h2>
+  <p class="intro">{{ pg.results_intro }}</p>
+  <label class="sr" for="res-q">{{ pg.results_search }}</label>
+  <input id="res-q" type="search" placeholder="{{ pg.results_search }}" autocomplete="off" data-filter=".res-grid a">
+  <div class="res-grid">
+    {% for code, name, link in results %}
+    <a href="{{ link }}" target="_blank" rel="noopener" data-name="{{ name|lower }}">{{ name }} <small>{{ pg.results_official }}</small></a>
+    {% endfor %}
+  </div>
+  <p class="note-box">{{ pg.results_note }}</p>
+</section>
+<section class="help" aria-labelledby="help-h2">
+  <div class="wrap help-grid">
+    <div><h2 id="help-h2">{{ t.help_title }}</h2><p>{{ t.help_body }}</p></div>
+    <div class="lines">
+      {% for l in t.help_lines %}
+      <a class="line" href="tel:+1{{ l.tel }}"><span class="line-label">{{ l.label }}</span><span class="line-show">{{ l.show }}</span><span class="line-num">{{ l.num }}</span></a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

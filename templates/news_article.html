@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% from "macros.html" import share %}
+{% from "news_card.html" import card %}
+{% block main %}
+<article class="story wrap">
+  <header class="story-h">
+    <a class="nc-cat" href="{{ url('noticias/' ~ a.category) }}">{{ t.news.cats[a.category] }}</a>
+    <h1>{{ a.title }}</h1>
+    <p class="story-dek">{{ a.dek }}</p>
+    <p class="byline">{{ t.news.by }} <strong>{{ a.author }}</strong> · <time datetime="{{ a.date.isoformat() }}">{{ a.date|fecha(lang) }}</time>{% if a.updated %} · {{ t.news.updated }} {{ a.updated }}{% endif %}
+      {% if tr %} · <a href="{{ alt }}" lang="{{ 'en' if lang == 'es' else 'es' }}">{{ t.news.read_other }}</a>{% endif %}</p>
+  </header>
+  {% if a.image %}<figure class="story-img"><img src="{{ a.image }}" alt="{{ a.image_alt or '' }}">{% if a.image_credit %}<figcaption>{{ a.image_credit }}</figcaption>{% endif %}</figure>{% endif %}
+  <div class="prose story-body">{{ a.html|safe }}</div>
+  {% if a.sources %}
+  <section class="sources">
+    <h2>{{ t.news.sources }}</h2>
+    <ul>{% for s in a.sources %}<li><a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.title }}</a></li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+  <div class="doc-share">{{ share(t) }}</div>
+  <p class="correct">{{ t.news.correct }} <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+</article>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NewsArticle","headline":{{ a.title|tojson }},"description":{{ a.dek|tojson }},
+ "datePublished":"{{ a.date.isoformat() }}","inLanguage":"{{ t.html_lang }}","author":{"@type":"Person","name":{{ a.author|tojson }}},
+ "publisher":{"@type":"NewsMediaOrganization","name":"Votante Latino","parentOrganization":{"@type":"Organization","name":{{ site.owner|tojson }}}}}
+</script>
+{% if related %}
+<section class="wrap related">
+  <h2>{{ t.news.more }}</h2>
+  <div class="nl-grid">{% for r in related %}{{ card(r, t, lang, "s") }}{% endfor %}</div>
+</section>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% from "news_card.html" import card %}
+{% block main %}
+<section class="nl-h">
+  <div class="wrap">
+    <h1>{{ pg.title }}</h1>
+    <p>{{ pg.lede }}</p>
+    <nav class="nl-tabs" aria-label="{{ t.news.title }}">
+      <a href="{{ url('noticias') }}"{% if not cat %} aria-current="page"{% endif %}>{{ t.news.all }}</a>
+      {% for c, name in t.news.cats.items() %}<a href="{{ url('noticias/' ~ c) }}"{% if cat == c %} aria-current="page"{% endif %}>{{ name }}</a>{% endfor %}
+      <a class="nl-rss" href="{{ url('noticias') }}rss.xml">{{ t.news.rss }}</a>
+    </nav>
+  </div>
+</section>
+<div class="wrap nl-body">
+  {% if items %}
+  <div class="nl-lead">{{ card(items[0], t, lang, "l") }}</div>
+  <div class="nl-grid">{% for a in items[1:] %}{{ card(a, t, lang) }}{% endfor %}</div>
+  {% else %}
+  <p class="news-empty">{{ t.news.empty }}</p>
+  {% endif %}
+</div>
+{% endblock %}

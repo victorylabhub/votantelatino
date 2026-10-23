@@ -1,0 +1,62 @@
+# Panel de redacción (Decap CMS). Cada nota se guarda como archivo en el
+# repositorio y Netlify vuelve a construir el sitio al publicarla.
+backend:
+  name: github
+  repo: victorylabhub/votantelatino
+  branch: main
+  site_domain: votantelatino.netlify.app
+  commit_messages:
+    create: "Nueva nota: {{slug}}"
+    update: "Edita nota: {{slug}}"
+    delete: "Elimina nota: {{slug}}"
+    uploadMedia: "Sube imagen: {{path}}"
+
+# Borrador → En revisión → Lista para publicar
+publish_mode: editorial_workflow
+locale: es
+
+media_folder: static/img/noticias
+public_folder: /static/img/noticias
+
+collections:
+  - name: noticias
+    label: Noticias
+    label_singular: Nota
+    folder: content/noticias
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: md
+    format: frontmatter
+    summary: "[{{lang}}] {{title}}"
+    sortable_fields: [date, title]
+    view_filters:
+      - { label: Español, field: lang, pattern: es }
+      - { label: English, field: lang, pattern: en }
+    fields:
+      - { label: Título, name: title, widget: string }
+      - label: Idioma
+        name: lang
+        widget: select
+        options: [{ label: Español, value: es }, { label: English, value: en }]
+        default: es
+      - label: Sección
+        name: category
+        widget: select
+        options:
+          - { label: Elecciones 2026, value: elecciones-2026 }
+          - { label: Explicadores, value: explicadores }
+      - { label: Bajada (resumen de una o dos frases), name: dek, widget: text }
+      - { label: Firma, name: author, widget: string, default: "Redacción Votante Latino" }
+      - { label: Fecha de publicación, name: date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ssZ" }
+      - { label: Clave de traducción (igual en la versión ES y EN), name: ref, widget: string, required: false, hint: "Ejemplo: que-se-vota-2026. Enlaza la nota con su versión en el otro idioma." }
+      - { label: Imagen principal, name: image, widget: image, required: false }
+      - { label: Descripción de la imagen, name: image_alt, widget: string, required: false }
+      - { label: Crédito de la imagen, name: image_credit, widget: string, required: false }
+      - { label: Texto, name: body, widget: markdown }
+      - label: Fuentes
+        name: sources
+        widget: list
+        required: false
+        fields:
+          - { label: Nombre de la fuente, name: title, widget: string }
+          - { label: Enlace, name: url, widget: string }

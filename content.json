@@ -1,0 +1,550 @@
+{
+ "es": {
+  "html_lang": "es-US",
+  "name": "Votante Latino",
+  "desc": "Información electoral bilingüe, clara y sin partido para votantes latinos en Estados Unidos.",
+  "skip": "Saltar al contenido",
+  "lang_switch": "English",
+  "lang_switch_label": "Read this page in English",
+  "prelaunch": "Sitio en preparación. Para información oficial consulta a la autoridad electoral de tu estado.",
+  "nav": {
+   "como-votar": "Cómo votar",
+   "tus-derechos": "Tus derechos",
+   "verifica": "Verifica",
+   "noticias": "Noticias",
+   "quienes-somos": "Quiénes somos",
+   "privacidad": "Privacidad",
+   "noche-electoral": "Noche electoral",
+   "tienda": "Tienda"
+  },
+  "hero_title": "Las elecciones generales son el martes 3 de noviembre.",
+  "hero_lede": "Elige tu estado y te llevamos a la información oficial para registrarte, encontrar dónde votar y conocer los plazos.",
+  "countdown_future": "Faltan {n} días",
+  "countdown_one": "Falta 1 día",
+  "countdown_today": "Hoy es el día de la elección",
+  "countdown_past": "La elección general fue el 3 de noviembre",
+  "state_label": "¿En qué estado votas?",
+  "state_placeholder": "Elige tu estado",
+  "state_go": "Ver información oficial",
+  "state_note": "Te enviamos a vote.gov, el portal del gobierno federal. Votante Latino no recibe tus datos.",
+  "vote_gov_es": "https://vote.gov/es",
+  "help_title": "¿Problemas para votar? Llama o envía un mensaje.",
+  "help_body": "Líneas gratuitas y sin partido de la coalición Election Protection, con voluntarios capacitados.",
+  "help_lines": [
+   {
+    "label": "En español",
+    "tel": "8888398682",
+    "show": "888-VE-Y-VOTA",
+    "num": "888-839-8682"
+   },
+   {
+    "label": "En inglés",
+    "tel": "8666878683",
+    "show": "866-OUR-VOTE",
+    "num": "866-687-8683"
+   }
+  ],
+  "steps_title": "Antes de ir a votar",
+  "steps": [
+   {
+    "h": "Confirma tu registro",
+    "p": "Cada estado fija su propio plazo. En algunos puedes registrarte el mismo día que votas; en otros el registro cierra semanas antes."
+   },
+   {
+    "h": "Ubica tu lugar de votación",
+    "p": "Puede cambiar de una elección a otra. Confírmalo con la oficina electoral de tu condado unos días antes."
+   },
+   {
+    "h": "Revisa qué identificación piden",
+    "p": "Algunos estados exigen identificación con foto y otros no. Consulta la lista exacta de tu estado."
+   },
+   {
+    "h": "Decide cómo vas a votar",
+    "p": "Por correo, de forma anticipada o el día de la elección. Si votas por correo, revisa la fecha límite para devolver tu boleta."
+   }
+  ],
+  "steps_more": "Ver la guía completa",
+  "rights_title": "Tus derechos en el lugar de votación",
+  "rights_short": [
+   "Si estás en la fila a la hora del cierre, tienes derecho a votar.",
+   "Si hay un problema con tu registro, puedes pedir una boleta provisional.",
+   "Puedes llevar a una persona de tu confianza para que te ayude, salvo tu empleador o tu sindicato."
+  ],
+  "rights_more": "Conoce todos tus derechos",
+  "verify_title": "Antes de compartir, verifica",
+  "verify_short": "Nadie vota por mensaje de texto ni por teléfono. Si te llega un aviso de que tu lugar de votación cambió, confírmalo con tu condado.",
+  "verify_more": "Cómo detectar información falsa",
+  "news_title": "Noticias",
+  "news_empty": "Nuestra redacción comenzará a publicar pronto: reportajes locales, explicaciones y respuestas a tus preguntas sobre la elección.",
+  "news_contact": "Escríbenos qué quieres que investiguemos",
+  "footer_owner": "Votante Latino es un proyecto informativo de {owner}. No apoya a partidos ni a candidatos.",
+  "footer_about": "Conoce quién nos dirige y cómo nos financiamos",
+  "footer_official": "Fuentes oficiales",
+  "footer_contact": "Contacto",
+  "pages": {
+   "como-votar": {
+    "title": "Cómo votar en 2026",
+    "lede": "Lo esencial para votar en la elección general del 3 de noviembre. Las reglas cambian por estado, así que cada paso te lleva a la fuente oficial.",
+    "body": "<h2>1. Confirma que estás registrado</h2><p>Para votar en una elección federal necesitas ser ciudadano estadounidense, cumplir los requisitos de residencia de tu estado y tener 18 años el día de la elección. Algunos estados permiten pre-registrarse antes.</p><p>Los plazos de registro varían. Algunos estados permiten registrarse el mismo día de la elección; otros cierran el registro hasta un mes antes. Confirma tu situación en el portal de tu estado.</p><h2>2. Encuentra tu lugar de votación</h2><p>Tu lugar de votación depende de tu domicilio y puede cambiar entre elecciones. La oficina electoral de tu condado publica la dirección y el horario. Los horarios de apertura y cierre también varían por estado.</p><h2>3. Revisa la identificación que pide tu estado</h2><p>Hay estados que piden identificación con foto, otros aceptan documentos sin foto y otros no piden identificación a quienes ya están registrados. Revisa la lista de tu estado antes de salir.</p><h2>4. Elige cómo votar</h2><p><strong>Por correo:</strong> todos los estados ofrecen alguna forma de voto en ausencia; en algunos necesitas dar una razón. Revisa la fecha límite para solicitar y devolver tu boleta.</p><p><strong>Anticipado en persona:</strong> la mayoría de los estados abren casillas antes del día de la elección, con fechas distintas.</p><p><strong>El día de la elección:</strong> martes 3 de noviembre de 2026.</p><h2>Si vives fuera de Estados Unidos o estás en el servicio militar</h2><p>El Programa Federal de Asistencia para el Voto (FVAP) tiene el proceso para votar desde el extranjero.</p>",
+    "states_title": "Información oficial por estado"
+   },
+   "tus-derechos": {
+    "title": "Tus derechos como votante",
+    "lede": "La ley federal protege tu derecho a votar. Esto es lo que puedes exigir en tu lugar de votación.",
+    "body": "<h2>Si estás en la fila al cierre, puedes votar</h2><p>Si llegaste antes de la hora de cierre, no te retires de la fila. Tienes derecho a emitir tu voto.</p><h2>Boleta provisional</h2><p>Si tu nombre no aparece en la lista o hay un problema con tu registro, la Ley Ayudar a Estados Unidos a Votar (HAVA) te permite emitir una boleta provisional. Después se verifica si eras elegible y, si lo eras, tu voto cuenta.</p><h2>Ayuda para votar</h2><p>Si necesitas ayuda por una discapacidad o porque no lees bien el idioma de la boleta, puedes llevar a una persona de tu elección. La Sección 208 de la Ley de Derecho al Voto solo excluye a tu empleador o a quien lo represente y a un representante de tu sindicato.</p><h2>Materiales en español</h2><p>En los condados y jurisdicciones cubiertos por la Sección 203 de la Ley de Derecho al Voto, la autoridad electoral debe ofrecer boletas, materiales y asistencia en español. Pregunta en tu oficina electoral si tu condado está cubierto.</p><h2>Votar sin intimidación</h2><p>Nadie puede amenazarte, acosarte ni presionarte para que votes o dejes de votar. Si ocurre, repórtalo a los funcionarios de la casilla y llama a la línea de ayuda.</p><h2>Si algo sale mal</h2><p>Llama o envía un mensaje al 888-VE-Y-VOTA (888-839-8682) para asistencia en español, o al 866-OUR-VOTE (866-687-8683) en inglés.</p><p class=\"note\">Esta guía es informativa y no constituye asesoría legal.</p>"
+   },
+   "verifica": {
+    "title": "Antes de compartir, verifica",
+    "lede": "La información falsa sobre cómo, cuándo y dónde votar puede dejar a alguien sin votar. Estas reglas sencillas ayudan a detectarla.",
+    "body": "<h2>Las fechas y los lugares solo los define la autoridad electoral</h2><p>Si un mensaje dice que la elección cambió de día o que tu lugar de votación se movió, confírmalo con la oficina electoral de tu condado o de tu estado antes de creerlo o reenviarlo.</p><h2>No existe el voto por mensaje de texto, teléfono o redes sociales</h2><p>En las elecciones federales solo se vota en persona o con boleta por correo, según las reglas de tu estado.</p><h2>Desconfía de la urgencia</h2><p>Los mensajes que te piden actuar de inmediato, reenviar a todos tus contactos o dar datos personales suelen ser falsos.</p><h2>Busca la fuente original</h2><p>Antes de compartir una cifra, una foto o una cita, busca quién la publicó primero y si un medio o una autoridad la confirmó.</p><h2>Dónde reportar</h2><p>Reporta la información falsa sobre el proceso de votación a la oficina electoral de tu estado o a la línea 888-VE-Y-VOTA.</p>"
+   },
+   "noticias": {
+    "title": "Noticias",
+    "lede": "Reportajes y explicaciones sobre la elección desde las comunidades latinas.",
+    "body": ""
+   },
+   "quienes-somos": {
+    "title": "Quiénes somos",
+    "lede": "Votante Latino es un proyecto informativo bilingüe para que más personas latinas en Estados Unidos sepan cómo votar.",
+    "body": "<h2>Propiedad</h2><p>Votante Latino pertenece a <strong>Atlas Media Network, LLC</strong>, con domicilio en 36 Russ Street, 3rd Floor, Hartford, CT 06106, United States. Forma parte de la red de medios de Atlas Media Network. <a href=\"https://www.atlasmedianetwork.org\">atlasmedianetwork.org</a></p><h2>Financiamiento</h2><p>Votante Latino se autofinancia en parte con las ventas de su tienda. [Describir aquí las demás fuentes de financiamiento del proyecto y cualquier relación con partidos, campañas, gobiernos u organizaciones políticas que pudiera representar un conflicto de interés.]</p><h2>Independencia</h2><p>Votante Latino no apoya a partidos, candidatos ni propuestas en la boleta. No publica publicidad política. Votante Latino no está afiliado a Voto Latino ni a ninguna otra organización con nombre similar.</p><h2>Principios editoriales</h2><p>Toda la información sobre el proceso de votación remite a fuentes oficiales. Las notas llevan firma y citan sus fuentes. Distinguimos entre información y opinión.</p><h2>Correcciones</h2><p>Si encuentras un error, escríbenos a <a href=\"mailto:info@atlasmedianetwork.org\">info@atlasmedianetwork.org</a>. Corregimos de forma visible e indicamos qué cambió y cuándo.</p><h2>Equipo</h2><p>Dirección editorial: [nombre por designar]. Los reporteros se presentarán aquí con nombre y perfil.</p>"
+   },
+   "privacidad": {
+    "title": "Aviso de privacidad",
+    "lede": "Votante Latino no te pide datos personales para usar el sitio.",
+    "body": "<h2>Responsable</h2><p>Atlas Media Network, LLC. 36 Russ Street, 3rd Floor, Hartford, CT 06106, United States. Contacto de privacidad: <a href=\"mailto:privacy@atlasmedianetwork.org\">privacy@atlasmedianetwork.org</a>.</p><h2>Qué datos tratamos</h2><p>El sitio no tiene formularios, no usa cookies de publicidad y no guarda en qué estado votas. El selector de estado solo te dirige a vote.gov. Si nos escribes por correo, usamos tu mensaje únicamente para responderte.</p><h2>Registros técnicos</h2><p>Nuestro proveedor de alojamiento puede registrar datos técnicos como la dirección IP para fines de seguridad y funcionamiento.</p><h2>Tus derechos</h2><p>Según tu estado de residencia, puedes tener derecho a acceder, corregir o eliminar tus datos. Escríbenos a privacy@atlasmedianetwork.org.</p><p class=\"note\">[Texto preliminar sujeto a revisión del área jurídica.]</p>"
+   },
+   "noche-electoral": {
+    "title": "Noche electoral 2026",
+    "lede": "Transmisión en vivo en español e inglés el martes 3 de noviembre. Los resultados vienen de las autoridades electorales de cada estado.",
+    "player_off": "La transmisión comienza el martes 3 de noviembre. Cuando estemos al aire, la verás aquí.",
+    "what_title": "Qué vas a ver",
+    "what_body": "El cierre de casillas por zona horaria, reportes desde las comunidades latinas y respuestas en directo a tus dudas sobre la votación.",
+    "close_title": "Cierre de casillas (hora del Este)",
+    "close_note": "Horario en que cierra la mayoría de las casillas de cada estado. En estados con dos zonas horarias, algunas casillas cierran una hora después. Si estás en la fila a la hora del cierre, tienes derecho a votar.",
+    "results_title": "Resultados oficiales por estado",
+    "results_intro": "Cada enlace lleva al sitio de resultados de la autoridad electoral del estado. Votante Latino no publica conteos propios ni proyecciones.",
+    "results_search": "Busca tu estado",
+    "results_official": "Sitio oficial",
+    "results_note": "Los resultados de la noche son preliminares. Los estados cuentan y certifican durante los días o semanas siguientes."
+   },
+   "tienda": {
+    "title": "Tienda Votante Latino",
+    "lede": "Ropa y accesorios para invitar a votar. Cada compra financia la información electoral bilingüe y gratuita de Votante Latino.",
+    "fund": "Las ventas financian el proyecto",
+    "soon": "La tienda abre pronto. Pagos y envíos estarán disponibles en los próximos días.",
+    "add": "Agregar al carrito",
+    "soon_btn": "Disponible pronto",
+    "filters": {
+     "all": "Todo",
+     "ropa": "Ropa",
+     "acc": "Accesorios"
+    },
+    "notes": [
+     [
+      "Hecho para invitar, no para hacer campaña",
+      "Ningún producto menciona candidatos, partidos ni propuestas."
+     ],
+     [
+      "Antes de ir a votar",
+      "Algunos estados prohíben llevar ropa con mensajes electorales dentro o cerca del lugar de votación. Te recomendamos no usarla ese día en la casilla."
+     ],
+     [
+      "A dónde va tu dinero",
+      "Las ganancias sostienen la redacción, la señal en vivo y las guías de Votante Latino. Lo detallamos en Quiénes somos."
+     ]
+    ],
+    "products": [
+     [
+      "sudadera",
+      "ropa",
+      "Sudadera clásica",
+      "Algodón, azul medianoche",
+      "$45"
+     ],
+     [
+      "playera",
+      "ropa",
+      "Playera",
+      "Algodón, blanca",
+      "$25"
+     ],
+     [
+      "gorra",
+      "ropa",
+      "Gorra bordada",
+      "Azul eléctrico, ajustable",
+      "$24"
+     ],
+     [
+      "bolsa",
+      "acc",
+      "Bolsa de lona",
+      "Azul medianoche",
+      "$20"
+     ],
+     [
+      "termo",
+      "acc",
+      "Termo",
+      "Acero inoxidable, 600 ml",
+      "$28"
+     ],
+     [
+      "pin",
+      "acc",
+      "Pin metálico",
+      "Esmalte con borde dorado",
+      "$8"
+     ],
+     [
+      "parche",
+      "acc",
+      "Parche bordado",
+      "Para planchar o coser",
+      "$9"
+     ],
+     [
+      "lanyard",
+      "acc",
+      "Lanyard",
+      "Tela, con broche",
+      "$10"
+     ],
+     [
+      "calcomanias",
+      "acc",
+      "Hoja de calcomanías",
+      "Seis diseños",
+      "$6"
+     ],
+     [
+      "tarjetero",
+      "acc",
+      "Tarjetero",
+      "Piel sintética",
+      "$18"
+     ]
+    ]
+   }
+  },
+  "live_now": "En vivo ahora",
+  "live_next": "Próximas transmisiones",
+  "live_watch": "Ver en YouTube",
+  "live_nav": "En vivo",
+  "share": "Compartir:",
+  "share_copy": "Copiar enlace",
+  "share_copied": "Enlace copiado",
+  "live_title_fallback": "Transmisión en vivo de Votante Latino",
+  "car_ghost": "VOTA",
+  "car_title": "Votante Latino",
+  "car_line": "Martes 3 de noviembre. Información clara para votar, en tu idioma.",
+  "car_cta": "Tienda",
+  "car_prev": "Figura anterior",
+  "car_next": "Figura siguiente",
+  "car_label": "Galería de la comunidad Votante Latino",
+  "com_title": "Somos Votante Latino",
+  "com_body": "Una comunidad que se informa, se registra y vota. Lleva la marca contigo y ayuda a sostener la información gratuita.",
+  "com_cta": "Ver la tienda",
+  "com_alts": [
+   "Tres jóvenes con playeras y gorra de Votante Latino",
+   "Joven con sudadera de Votante Latino",
+   "Joven con playera, gorra y lanyard de Votante Latino",
+   "Joven con playera y bolsa de Votante Latino"
+  ],
+  "car_pause": "Pausar",
+  "car_play": "Reanudar",
+  "news": {
+   "title": "Noticias",
+   "lede": "Explicaciones y reportajes sobre la elección, verificados y con fuentes.",
+   "cats": {
+    "elecciones-2026": "Elecciones 2026",
+    "explicadores": "Explicadores"
+   },
+   "all": "Todas",
+   "by": "Por",
+   "sources": "Fuentes",
+   "read_other": "Read in English",
+   "more": "Más noticias",
+   "latest": "Lo más reciente",
+   "min": "min de lectura",
+   "empty": "Todavía no hay notas en esta sección.",
+   "correct": "¿Encontraste un error? Escríbenos a",
+   "updated": "Actualizado",
+   "rss": "RSS"
+  }
+ },
+ "en": {
+  "html_lang": "en-US",
+  "name": "Votante Latino",
+  "desc": "Clear, nonpartisan, bilingual election information for Latino voters in the United States.",
+  "skip": "Skip to content",
+  "lang_switch": "Español",
+  "lang_switch_label": "Lee esta página en español",
+  "prelaunch": "Site in preparation. For official information, check with your state election office.",
+  "nav": {
+   "como-votar": "How to vote",
+   "tus-derechos": "Your rights",
+   "verifica": "Verify",
+   "noticias": "News",
+   "quienes-somos": "About us",
+   "privacidad": "Privacy",
+   "noche-electoral": "Election night",
+   "tienda": "Shop"
+  },
+  "hero_title": "The general election is Tuesday, November 3.",
+  "hero_lede": "Choose your state and we’ll take you to the official information to register, find where to vote and check deadlines.",
+  "countdown_future": "{n} days to go",
+  "countdown_one": "1 day to go",
+  "countdown_today": "Today is Election Day",
+  "countdown_past": "The general election was on November 3",
+  "state_label": "Which state do you vote in?",
+  "state_placeholder": "Choose your state",
+  "state_go": "See official information",
+  "state_note": "We send you to vote.gov, the federal government’s portal. Votante Latino doesn’t receive your data.",
+  "vote_gov_es": "https://vote.gov",
+  "help_title": "Trouble voting? Call or text.",
+  "help_body": "Free, nonpartisan hotlines run by the Election Protection coalition, staffed by trained volunteers.",
+  "help_lines": [
+   {
+    "label": "In Spanish",
+    "tel": "8888398682",
+    "show": "888-VE-Y-VOTA",
+    "num": "888-839-8682"
+   },
+   {
+    "label": "In English",
+    "tel": "8666878683",
+    "show": "866-OUR-VOTE",
+    "num": "866-687-8683"
+   }
+  ],
+  "steps_title": "Before you vote",
+  "steps": [
+   {
+    "h": "Confirm your registration",
+    "p": "Each state sets its own deadline. Some let you register on the day you vote; in others registration closes weeks before."
+   },
+   {
+    "h": "Find your polling place",
+    "p": "It can change from one election to the next. Confirm it with your county election office a few days ahead."
+   },
+   {
+    "h": "Check the ID requirements",
+    "p": "Some states require photo ID and others don’t. Look up your state’s exact list."
+   },
+   {
+    "h": "Decide how you’ll vote",
+    "p": "By mail, early in person or on Election Day. If you vote by mail, check the deadline to return your ballot."
+   }
+  ],
+  "steps_more": "Read the full guide",
+  "rights_title": "Your rights at the polls",
+  "rights_short": [
+   "If you’re in line when the polls close, you have the right to vote.",
+   "If there’s a problem with your registration, you can ask for a provisional ballot.",
+   "You can bring a person you trust to help you, except your employer or union."
+  ],
+  "rights_more": "Know all your rights",
+  "verify_title": "Verify before you share",
+  "verify_short": "No one votes by text or phone. If you get a message saying your polling place changed, confirm it with your county.",
+  "verify_more": "How to spot false information",
+  "news_title": "News",
+  "news_empty": "Our newsroom will start publishing soon: local reporting, explainers and answers to your questions about the election.",
+  "news_contact": "Tell us what you want us to look into",
+  "footer_owner": "Votante Latino is an information project of {owner}. It does not support any party or candidate.",
+  "footer_about": "Learn who runs and funds us",
+  "footer_official": "Official sources",
+  "footer_contact": "Contact",
+  "pages": {
+   "como-votar": {
+    "title": "How to vote in 2026",
+    "lede": "The essentials for voting in the November 3 general election. Rules vary by state, so each step points you to the official source.",
+    "body": "<h2>1. Confirm you’re registered</h2><p>To vote in a federal election you must be a U.S. citizen, meet your state’s residency requirements and be 18 by Election Day. Some states allow pre-registration earlier.</p><p>Registration deadlines vary. Some states allow same-day registration; others close registration up to a month before. Check your status on your state’s portal.</p><h2>2. Find your polling place</h2><p>Your polling place depends on your address and can change between elections. Your county election office publishes the location and hours. Opening and closing times also vary by state.</p><h2>3. Check your state’s ID requirements</h2><p>Some states ask for photo ID, others accept non-photo documents, and others don’t ask registered voters for ID. Check your state’s list before you go.</p><h2>4. Choose how to vote</h2><p><strong>By mail:</strong> every state offers some form of absentee voting; in some you need an excuse. Check the deadlines to request and return your ballot.</p><p><strong>Early in person:</strong> most states open polling places before Election Day, on different dates.</p><p><strong>On Election Day:</strong> Tuesday, November 3, 2026.</p><h2>If you live outside the U.S. or serve in the military</h2><p>The Federal Voting Assistance Program (FVAP) explains how to vote from abroad.</p>",
+    "states_title": "Official information by state"
+   },
+   "tus-derechos": {
+    "title": "Your rights as a voter",
+    "lede": "Federal law protects your right to vote. Here is what you can count on at your polling place.",
+    "body": "<h2>If you’re in line at closing time, you can vote</h2><p>If you arrived before the polls closed, stay in line. You have the right to cast your ballot.</p><h2>Provisional ballot</h2><p>If your name isn’t on the list or there’s a problem with your registration, the Help America Vote Act (HAVA) lets you cast a provisional ballot. Your eligibility is checked afterward and, if you were eligible, your vote counts.</p><h2>Help with voting</h2><p>If you need help because of a disability or because you can’t read the ballot’s language well, you can bring a person of your choice. Section 208 of the Voting Rights Act only excludes your employer or its agent and an agent of your union.</p><h2>Materials in Spanish</h2><p>In counties and jurisdictions covered by Section 203 of the Voting Rights Act, election officials must provide ballots, materials and assistance in Spanish. Ask your election office whether your county is covered.</p><h2>Vote free from intimidation</h2><p>No one may threaten, harass or pressure you to vote or not vote. If it happens, tell the poll workers and call the hotline.</p><h2>If something goes wrong</h2><p>Call or text 888-VE-Y-VOTA (888-839-8682) for help in Spanish, or 866-OUR-VOTE (866-687-8683) in English.</p><p class=\"note\">This guide is for information only and is not legal advice.</p>"
+   },
+   "verifica": {
+    "title": "Verify before you share",
+    "lede": "False information about how, when and where to vote can keep people from voting. These simple rules help you spot it.",
+    "body": "<h2>Only election officials set dates and locations</h2><p>If a message says the election moved or your polling place changed, confirm it with your county or state election office before believing or forwarding it.</p><h2>There is no voting by text, phone or social media</h2><p>In federal elections you vote in person or with a mail ballot, according to your state’s rules.</p><h2>Be wary of urgency</h2><p>Messages that push you to act immediately, forward to all your contacts or share personal data are usually false.</p><h2>Find the original source</h2><p>Before sharing a number, a photo or a quote, look for who published it first and whether a news outlet or an official confirmed it.</p><h2>Where to report</h2><p>Report false information about the voting process to your state election office or to 866-OUR-VOTE.</p>"
+   },
+   "noticias": {
+    "title": "News",
+    "lede": "Reporting and explainers about the election from Latino communities.",
+    "body": ""
+   },
+   "quienes-somos": {
+    "title": "About us",
+    "lede": "Votante Latino is a bilingual information project to help more Latinos in the United States know how to vote.",
+    "body": "<h2>Ownership</h2><p>Votante Latino is owned by <strong>Atlas Media Network, LLC</strong>, 36 Russ Street, 3rd Floor, Hartford, CT 06106, United States. It is part of the Atlas Media Network family of outlets. <a href=\"https://www.atlasmedianetwork.org\">atlasmedianetwork.org</a></p><h2>Funding</h2><p>Votante Latino is partly self-funded through sales in its shop. [Describe the project’s other funding sources and any relationship with parties, campaigns, governments or political organizations that could represent a conflict of interest.]</p><h2>Independence</h2><p>Votante Latino does not support parties, candidates or ballot measures. It does not run political advertising. Votante Latino is not affiliated with Voto Latino or any other organization with a similar name.</p><h2>Editorial principles</h2><p>All information about the voting process points to official sources. Stories carry a byline and cite their sources. We separate news from opinion.</p><h2>Corrections</h2><p>If you find an error, write to <a href=\"mailto:info@atlasmedianetwork.org\">info@atlasmedianetwork.org</a>. We correct visibly and note what changed and when.</p><h2>Team</h2><p>Editorial director: [to be named]. Our reporters will be introduced here by name and profile.</p>"
+   },
+   "privacidad": {
+    "title": "Privacy notice",
+    "lede": "Votante Latino doesn’t ask for personal data to use the site.",
+    "body": "<h2>Data controller</h2><p>Atlas Media Network, LLC. 36 Russ Street, 3rd Floor, Hartford, CT 06106, United States. Privacy contact: <a href=\"mailto:privacy@atlasmedianetwork.org\">privacy@atlasmedianetwork.org</a>.</p><h2>What data we handle</h2><p>The site has no forms, uses no advertising cookies and does not store which state you vote in. The state selector only sends you to vote.gov. If you email us, we use your message only to reply.</p><h2>Technical logs</h2><p>Our hosting provider may log technical data such as IP addresses for security and operation.</p><h2>Your rights</h2><p>Depending on your state of residence, you may have the right to access, correct or delete your data. Write to privacy@atlasmedianetwork.org.</p><p class=\"note\">[Preliminary text subject to legal review.]</p>"
+   },
+   "noche-electoral": {
+    "title": "Election night 2026",
+    "lede": "Live coverage in Spanish and English on Tuesday, November 3. Results come from each state's election officials.",
+    "player_off": "Coverage starts Tuesday, November 3. When we're on air, you'll see it here.",
+    "what_title": "What you'll see",
+    "what_body": "Poll closings by time zone, reports from Latino communities and live answers to your questions about voting.",
+    "close_title": "Poll closing times (Eastern Time)",
+    "close_note": "Time when most polls in each state close. In states with two time zones, some polls close an hour later. If you're in line when polls close, you have the right to vote.",
+    "results_title": "Official results by state",
+    "results_intro": "Each link goes to the results site of the state's election authority. Votante Latino does not publish its own counts or projections.",
+    "results_search": "Find your state",
+    "results_official": "Official site",
+    "results_note": "Election night results are preliminary. States count and certify over the following days or weeks."
+   },
+   "tienda": {
+    "title": "Votante Latino Shop",
+    "lede": "Apparel and accessories that invite people to vote. Every purchase funds Votante Latino's free, bilingual election information.",
+    "fund": "Sales fund the project",
+    "soon": "The shop opens soon. Payments and shipping will be available in the coming days.",
+    "add": "Add to cart",
+    "soon_btn": "Coming soon",
+    "filters": {
+     "all": "All",
+     "ropa": "Apparel",
+     "acc": "Accessories"
+    },
+    "notes": [
+     [
+      "Made to invite, not to campaign",
+      "No product mentions candidates, parties or ballot measures."
+     ],
+     [
+      "Before you vote",
+      "Some states ban clothing with election messages in or near polling places. We recommend not wearing it at the polls."
+     ],
+     [
+      "Where your money goes",
+      "Proceeds support the newsroom, the live stream and Votante Latino's guides. Details in About us."
+     ]
+    ],
+    "products": [
+     [
+      "sudadera",
+      "ropa",
+      "Classic sweatshirt",
+      "Cotton, midnight navy",
+      "$45"
+     ],
+     [
+      "playera",
+      "ropa",
+      "T-shirt",
+      "Cotton, white",
+      "$25"
+     ],
+     [
+      "gorra",
+      "ropa",
+      "Embroidered cap",
+      "Electric blue, adjustable",
+      "$24"
+     ],
+     [
+      "bolsa",
+      "acc",
+      "Canvas tote",
+      "Midnight navy",
+      "$20"
+     ],
+     [
+      "termo",
+      "acc",
+      "Water bottle",
+      "Stainless steel, 20 oz",
+      "$28"
+     ],
+     [
+      "pin",
+      "acc",
+      "Enamel pin",
+      "Gold-edged enamel",
+      "$8"
+     ],
+     [
+      "parche",
+      "acc",
+      "Embroidered patch",
+      "Iron-on or sew-on",
+      "$9"
+     ],
+     [
+      "lanyard",
+      "acc",
+      "Lanyard",
+      "Fabric, with clip",
+      "$10"
+     ],
+     [
+      "calcomanias",
+      "acc",
+      "Sticker sheet",
+      "Six designs",
+      "$6"
+     ],
+     [
+      "tarjetero",
+      "acc",
+      "Card holder",
+      "Faux leather",
+      "$18"
+     ]
+    ]
+   }
+  },
+  "live_now": "Live now",
+  "live_next": "Upcoming streams",
+  "live_watch": "Watch on YouTube",
+  "live_nav": "Live",
+  "share": "Share:",
+  "share_copy": "Copy link",
+  "share_copied": "Link copied",
+  "live_title_fallback": "Votante Latino live stream",
+  "car_ghost": "VOTE",
+  "car_title": "Votante Latino",
+  "car_line": "Tuesday, November 3. Clear voting information, in your language.",
+  "car_cta": "Shop",
+  "car_prev": "Previous figure",
+  "car_next": "Next figure",
+  "car_label": "Votante Latino community gallery",
+  "com_title": "We are Votante Latino",
+  "com_body": "A community that gets informed, registers and votes. Wear the brand and help keep the information free.",
+  "com_cta": "Visit the shop",
+  "com_alts": [
+   "Three young people in Votante Latino T-shirts and cap",
+   "Young man in a Votante Latino sweatshirt",
+   "Young man in a Votante Latino T-shirt, cap and lanyard",
+   "Young woman with a Votante Latino T-shirt and tote"
+  ],
+  "car_pause": "Pause",
+  "car_play": "Play",
+  "news": {
+   "title": "News",
+   "lede": "Explainers and reporting on the election, verified and sourced.",
+   "cats": {
+    "elecciones-2026": "2026 Elections",
+    "explicadores": "Explainers"
+   },
+   "all": "All",
+   "by": "By",
+   "sources": "Sources",
+   "read_other": "Leer en español",
+   "more": "More news",
+   "latest": "Latest",
+   "min": "min read",
+   "empty": "No stories in this section yet.",
+   "correct": "Found an error? Write to us at",
+   "updated": "Updated",
+   "rss": "RSS"
+  }
+ }
+}

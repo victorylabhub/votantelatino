@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="{{ t.html_lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if pg %}{{ pg.title }} | {% endif %}{{ t.name }}</title>
+<meta name="description" content="{{ pg.lede if pg else t.desc }}">
+{% if site.prelaunch %}<meta name="robots" content="noindex">{% endif %}
+<link rel="alternate" hreflang="{{ 'en' if lang == 'es' else 'es' }}" href="https://{{ site.domain }}{{ alt }}">
+<link rel="icon" href="/static/img/favicon-32.png" type="image/png">
+<link rel="apple-touch-icon" href="/static/img/icon-180.png">
+<meta property="og:image" content="https://{{ site.domain }}/static/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="{{ pg.title if pg else t.name }}">
+<meta property="og:description" content="{{ pg.lede if pg else t.desc }}">
+<meta property="og:site_name" content="{{ t.name }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Anton&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/site.css?v={{ site.v }}">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NewsMediaOrganization","name":"Votante Latino","url":"https://{{ site.domain }}/",
+ "ownershipFundingInfo":"https://{{ site.domain }}{{ url('quienes-somos') }}",
+ "parentOrganization":{"@type":"Organization","name":{{ site.owner|tojson }},"url":{{ site.owner_url|tojson }},
+   "address":{{ site.address|tojson }}}}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">{{ t.skip }}</a>
+{% if site.prelaunch %}<p class="prelaunch">{{ t.prelaunch }}</p>{% endif %}
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="{{ url() }}" aria-label="{{ t.name }}">
+      <img class="brand-mark" src="/static/img/emblema-240.png" alt="" width="64" height="43">
+      <span class="brand-word">Votante<br>Latino</span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a class="nav-live" href="{{ url('noche-electoral') }}" hidden>{{ t.live_nav }}</a>
+      {% for p in ["noche-electoral","como-votar","tus-derechos","verifica","noticias","tienda"] %}
+      <a href="{{ url(p) }}"{% if page == p %} aria-current="page"{% endif %}>{{ t.nav[p] }}</a>
+      {% endfor %}
+    </nav>
+    <a class="lang" href="{{ alt }}" hreflang="{{ 'en' if lang == 'es' else 'es' }}" lang="{{ 'en' if lang == 'es' else 'es' }}" title="{{ t.lang_switch_label }}">{{ t.lang_switch }}</a>
+  </div>
+</header>
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-own">
+      <p class="foot-brand">Votante Latino</p>
+      <p>{{ t.footer_owner.replace('{owner}', site.owner) }}</p>
+      <p><a href="{{ url('quienes-somos') }}">{{ t.footer_about }}</a></p>
+    </div>
+    <div>
+      <p class="foot-h">{{ t.footer_official }}</p>
+      <a href="{{ t.vote_gov_es }}">vote.gov</a>
+      <a href="https://www.eac.gov">eac.gov</a>
+      <a href="https://www.fvap.gov">fvap.gov</a>
+    </div>
+    <div>
+      <p class="foot-h">{{ t.footer_contact }}</p>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a href="{{ url('quienes-somos') }}">{{ t.nav['quienes-somos'] }}</a>
+      <a href="{{ url('privacidad') }}">{{ t.nav['privacidad'] }}</a>
+    </div>
+  </div>
+  <p class="wrap foot-legal">© 2026 {{ site.owner }} · {{ site.address }}</p>
+</footer>
+<script>window.VL={lang:"{{ lang }}",copied:"{{ t.share_copied }}"};</script>
+<script src="/static/site.js?v={{ site.v }}" defer></script>
+</body>
+</html>

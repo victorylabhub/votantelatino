@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="shop-h">
+  <div class="wrap shop-h-grid">
+    <div>
+      <h1>{{ pg.title }}</h1>
+      <p>{{ pg.lede }}</p>
+      <span class="fund">{{ pg.fund }}</span>
+    </div>
+    <img class="shop-h-img" src="/static/img/comunidad/c4.webp" alt="{{ t.com_alts[3] }}" width="900" height="900">
+  </div>
+</section>
+<div class="wrap">
+  <p class="soon">{{ pg.soon }}</p>
+  <div class="filters" role="group">
+    <button type="button" class="on" data-cat="all">{{ pg.filters.all }}</button>
+    <button type="button" data-cat="ropa">{{ pg.filters.ropa }}</button>
+    <button type="button" data-cat="acc">{{ pg.filters.acc }}</button>
+  </div>
+  <div class="grid">
+    {% for k, cat, name, desc, price in pg.products %}
+    <article class="prod" data-cat="{{ cat }}">
+      <img src="/static/img/tienda/{{ k }}.jpg" alt="{{ name }} Votante Latino" width="600" height="600" loading="lazy">
+      <h2>{{ name }}</h2>
+      <p>{{ desc }}</p>
+      <div class="prow"><b>{{ price }}</b><button type="button" disabled>{{ pg.soon_btn }}</button></div>
+    </article>
+    {% endfor %}
+  </div>
+  <section class="notes">
+    {% for h, p in pg.notes %}<div><h2>{{ h }}</h2><p>{{ p }}</p></div>{% endfor %}
+  </section>
+</div>
+{% endblock %}
